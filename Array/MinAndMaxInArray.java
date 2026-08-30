@@ -1,6 +1,6 @@
-import java.util.Collections;
+import java.util.*;
 
-class Solution {
+class MinAndMaxInArray {
     public ArrayList<Integer> getMinMax(int[] arr) {
         // code Here
 

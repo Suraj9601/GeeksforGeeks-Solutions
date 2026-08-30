@@ -1,4 +1,4 @@
-class Solution {
+class MoveAllZerosToEnd {
     void pushZerosToEnd(int[] arr) {
 
         int idx = 0;

@@ -1,4 +1,4 @@
-class Solution {
+class RotateArray {
     public void rotateArr(int arr[], int d) {
 
         int n = arr.length;

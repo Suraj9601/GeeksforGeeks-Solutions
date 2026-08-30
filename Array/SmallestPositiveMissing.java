@@ -1,4 +1,6 @@
-class Solution {
+import java.util.*;
+
+class SmallestPositiveMissing {
     public int missingNumber(int[] arr) {
         HashSet<Integer> set = new LinkedHashSet<>();
         

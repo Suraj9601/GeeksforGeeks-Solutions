@@ -1,4 +1,4 @@
-class Solution {
+class SecondLargest {
     public int getSecondLargest(int[] arr) {
         int max = -1;
         int secMax = -1;

@@ -1,4 +1,4 @@
-class Solution {
+class KadanesAlgorithm {
     int maxSubarraySum(int[] arr) {
 
         int maxSum = Integer.MIN_VALUE;
