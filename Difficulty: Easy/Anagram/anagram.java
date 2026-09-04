@@ -1,14 +1,22 @@
 class Solution {
     public static boolean areAnagrams(String s1, String s2) {
         
-      if(s1.length() != s2.length()) return false;
+      if(s1.length() != s2.length()) {
+        return false;
+      }
       
-      char[] c1 = s1.toCharArray();
-      char[] c2 = s2.toCharArray();
+      int[] freq = new int[26];
       
-      Arrays.sort(c1);
-      Arrays.sort(c2);
+      for(int i=0; i<s1.length(); i++) {
+          freq[s1.charAt(i) - 'a'] = freq[s1.charAt(i) - 'a'] + 1;
+          freq[s2.charAt(i) - 'a'] = freq[s2.charAt(i) - 'a'] - 1;
+      }
       
-      return Arrays.equals(c1,c2);
+      for(int i : freq) {
+          if(i != 0) {
+              return false;
+          }
+      }
+      return true;
     }
 }
